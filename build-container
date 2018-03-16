@@ -1,0 +1,5 @@
+#!/bin/bash
+./build
+docker build -t jasonayoung/webhook:0.0.1 .
+docker push jasonayoung/webhook:0.0.1
+rm webhook
